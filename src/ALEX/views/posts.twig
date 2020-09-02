@@ -1,0 +1,26 @@
+{% extends "template.twig" %}
+
+{% block titulo %} Lista de posts {% endblock %}
+
+{% block conteudo %}
+<h1>Principais Posts</h1>
+<div>
+    <h2>Mac Os</h2>
+    <h4>Autor: Maria</h4>
+    Acesse o <a href="{{ app.url_generator.generate('mac') }}">Link </a> para ver o post.
+</div>  
+    
+<div>
+    <h3>Linux</h3>
+    <h6>Autor: Alexandre</h6>
+    
+    Acesse o <a href="{{ app.url_generator.generate('linux') }}">Link </a> para ver o post.
+
+</div>
+    
+<div>
+    <h3>Windows</h3>
+    <h6>Autor: José</h6>
+    Acesse o <a href="{{ app.url_generator.generate('windows') }}">Link </a> para ver o post.
+</div>
+{% endblock %}
